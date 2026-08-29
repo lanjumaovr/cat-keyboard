@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="key_bg">#FFFFFFFF</color>
+    <color name="key_text">#FF000000</color>
+    <color name="toolbar_bg">#FFF5F5F5</color>
+    <color name="accent">#FF7B5E</color>
+</resources>
