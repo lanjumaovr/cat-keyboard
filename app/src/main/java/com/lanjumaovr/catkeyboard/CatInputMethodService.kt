@@ -1,7 +1,6 @@
 package com.lanjumaovr.catkeyboard
 
 import android.inputmethodservice.InputMethodService
-import android.view.KeyEvent
 import android.view.View
 import android.widget.Button
 import android.widget.LinearLayout
@@ -143,16 +142,5 @@ class CatInputMethodService : InputMethodService() {
         val transformed = applyTransform(full)
         ic.deleteSurroundingText(before.length, after.length)
         ic.commitText(transformed, 1)
-    }
-
-    override fun onKey(keyCode: Int, event: KeyEvent?): Boolean {
-        if (event?.action == KeyEvent.ACTION_DOWN && keyCode >= KeyEvent.KEYCODE_A && keyCode <= KeyEvent.KEYCODE_Z) {
-            val ch = event.getUnicodeChar(event.metaState).toChar()
-            if (ch.isLetterOrDigit()) {
-                commitText(ch.toString())
-                return true
-            }
-        }
-        return super.onKey(keyCode, event)
     }
 }
