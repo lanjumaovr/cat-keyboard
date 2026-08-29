@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">猫猫输入法</string>
+    <string name="ime_name">猫猫输入法</string>
+    <string name="ime_subtype">猫猫输入法 (中文)</string>
+</resources>
